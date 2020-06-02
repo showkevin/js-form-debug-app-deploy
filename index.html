@@ -20,7 +20,7 @@
 
                 for (var key in params) {
                     if (params.hasOwnProperty(key)) {
-                        const hiddenField = document.createElement('input');
+                        var hiddenField = document.createElement('input');
                         hiddenField.type = 'hidden';
                         hiddenField.name = key;
                         hiddenField.value = params[key];
